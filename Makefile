@@ -26,7 +26,7 @@ build-nc: ## Build the container without caching
 	docker build --rm --no-cache -t $(IMAGE_NAME) .
 
 run: ## Run container
-	xhost +local:root && \ # Allow X forwarding
+	xhost +local:root && # Allow X forwarding \
 	sudo docker run \
 	-d \
 	--name $(CONTAINER_NAME) \
