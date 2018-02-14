@@ -6,7 +6,7 @@ A dockerized version of the reverse engineering tool hopper (hopperapp.com). Run
 Running can be as simple as
 
 ```
-xhost +local:root && \ # Allow X forwarding
+xhost +local:root && \
 sudo docker run \
 -d \
 --name $(CONTAINER_NAME) \
@@ -14,7 +14,7 @@ sudo docker run \
 --cap-add=SYS_PTRACE \
 -v /tmp/.X11-unix:/tmp/.X11-unix:ro \
 -v $PWD/sharedFolder:/var/sharedFolder \
-$(IMAGE_NAME):$(VERSION)
+bananafett/hopper-docker:latest
 ```
 
 Check the Makefile for further info.
