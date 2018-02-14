@@ -34,19 +34,6 @@ run: ## Run container
 	--cap-add=SYS_PTRACE \
 	-v /tmp/.X11-unix:/tmp/.X11-unix:ro \
 	-v $(DIR)/sharedFolder:/var/sharedFolder \
-	--entrypoint /opt/hopper-v4/bin/Hopper \
-	$(IMAGE_NAME):$(VERSION)
-
-run-cracked: ## Run container with modified clock
-	docker pull $(IMAGE_NAME):$(VERSION) && \
-	xhost +local:root && \ # Allow X forwarding
-	sudo docker run \
-	-d \
-	--name $(CONTAINER_NAME) \
-	-e DISPLAY=$DISPLAY \
-	--cap-add=SYS_PTRACE \
-	-v /tmp/.X11-unix:/tmp/.X11-unix:ro \
-	-v $(DIR)/sharedFolder:/var/sharedFolder \
 	$(IMAGE_NAME):$(VERSION)
 
 stop: ## Stop a running container
