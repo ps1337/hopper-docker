@@ -4,5 +4,5 @@ services:
   - docker
 
 script:
-  - docker build -t bananafett/hopper .
+  - docker build -t bananafett/hopper-docker .
   - docker images
