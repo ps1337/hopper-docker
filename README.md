@@ -1,6 +1,6 @@
 # hopper-docker
 
-[![Build Status](https://travis-ci.org/0xBANANA/hopper-docker.png?branch=master)](https://travis-ci.org/0xBANANA/hopper-docker)
+[![Build Status](https://travis-ci.org/ps1337/hopper-docker.png?branch=master)](https://travis-ci.org/ps1337/hopper-docker)
 
 A dockerized version of the reverse engineering tool hopper (hopperapp.com). Run `make` for more info.
 
