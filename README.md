@@ -16,7 +16,7 @@ sudo docker run \
 --cap-add=SYS_PTRACE \
 -v /tmp/.X11-unix:/tmp/.X11-unix:ro \
 -v $PWD/sharedFolder:/var/sharedFolder \
-bananafett/hopper-docker:latest
+ps1337/hopper-docker:latest
 ```
 
 Check the Makefile for further info.
